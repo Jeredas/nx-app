@@ -1,0 +1,26 @@
+GET http://localhost:4200/api/user/6 HTTP/1.1
+###
+GET http://localhost:5555/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInV1aWQiOiI2MzFkODMxYS1iNjkwLTRmMTgtOGUyMC1kZmVjYzM4MWYwYzUiLCJlbWFpbCI6ImpkQG1haWwucnUiLCJnb29nbGVfaWQiOiIxMjM0NTY3OGdvb2dsZSIsImZpcnN0X25hbWUiOiJKb2huIiwibGFzdF9uYW1lIjoiRG9lIiwicGljdHVyZV91cmwiOm51bGwsInBhc3N3b3JkIjoiJDJiJDEwJGJCS1d1RXZNaThkYzRKRFd1WEpESC56VURBZHljQm9CbGxDalR3djJWYmlFT0FMUlpzTGZDIiwiY3JlYXRlZEF0IjoiMTM6NDU6MjQuNDk0KzAwIiwidXBkYXRlZEF0IjoiMTM6NDU6MjQuNDk0KzAwIiwiZGVsZXRlZEF0IjpudWxsLCJpYXQiOjE2NDkzMTYzMDZ9.QhG2FUeNfA63WA7YQeMxSkUtnMdPYATVwppycOViCwI
+###
+GET http://localhost:5555/api/product
+###
+POST http://localhost:5555/api/auth/signup
+Content-Type: application/json
+
+{
+    "first_name": "Correct",
+    "last_name": "User",
+    "email": "signUp@token.jwt",
+    "google_id": "jwt2_google",
+    "uuid": "631d831a-b690-4f18-8e20-dfecc381f0c8",
+	"password": "qwerty33"
+}
+###
+POST http://localhost:4200/auth/login
+Content-Type: application/json
+
+{
+	"email": "jwttoken@token.jwt",
+	"password": "qwerty11"
+}

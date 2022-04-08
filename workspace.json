@@ -3,7 +3,12 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "auth-service": "apps/auth-service",
+    "db-config": "libs/db-config",
     "nx-app": "apps/nx-app",
-    "nx-app-e2e": "apps/nx-app-e2e"
+    "nx-app-e2e": "apps/nx-app-e2e",
+    "shared-dto": "libs/shared-dto",
+    "shared-interfaces": "libs/shared-interfaces",
+    "shared-models": "libs/shared-models"
   }
 }

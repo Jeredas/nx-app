@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-test/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nx-test/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nx-test/db-config": ["libs/db-config/src/index.ts"],
+      "@nx-test/db-models": ["libs/db-models/src/index.ts"],
+      "@nx-test/shared-dto": ["libs/shared-dto/src/index.ts"],
+      "@nx-test/shared-interfaces": ["libs/shared-interfaces/src/index.ts"],
+      "@nx-test/shared-models": ["libs/shared-models/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
